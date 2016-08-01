@@ -1,0 +1,228 @@
+/* ==========================================================================
+   Quattro - Juan Carlos
+   ========================================================================== */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body{
+	height: 100%;
+	padding: 0;
+	margin: 0;	
+}
+
+body{color: #666;}
+
+.subtitulos{
+	font-size: 55px;
+	font-weight: 100;
+}
+
+.separador{
+	border-top: 1px solid #00ccff;
+	width: 150px;
+	margin: 25px auto;
+}
+
+/*	botón ir arriba  */
+.irarriba{
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;	
+	background-color: #666;
+	border-radius: 50%;
+	padding: 10px;
+	z-index: 2;
+	display: none;
+}
+
+.irarriba a span.glyphicon{
+	color: white;
+	font-size: 30px;
+	text-align: center;
+}
+
+/* ==========================================================================
+   Welcome
+   ========================================================================== */
+
+.welcome{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	background: url('../img/bg1.jpg') no-repeat center center fixed, #000; 
+	background-size: cover;	
+}
+
+.centrado{
+	position: relative;
+	top: 40%;
+	-webkit-transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+	-o-transform: translateY(-40%);
+	transform: translateY(-40%);
+}
+
+.centrado > figure{ margin-bottom: 80px; }
+
+.mensaje{
+	border: 6px solid #fff;
+	border-radius: 5px;
+	width: 50%;
+	margin: 0 auto;
+	color: #fff;
+	padding: 15px 0;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.mensaje h1{
+	font-weight: bolder;
+	font-size: 30px;
+	color: #00ccff;
+	display: inline-block;
+	padding: 0px;
+	margin: 0px;
+}
+
+.flecha{
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	text-align: center;
+
+	animation: oscilar 3s 2s infinite ease-in-out;
+}
+
+/* Animación de oscilación aplicado a la flecha */
+
+@-webkit-keyframes oscilar {
+	0%, 20%, 40%, 100%   { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+}
+
+@-moz-keyframes oscilar {
+	0%, 20%, 40%, 100%   { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+}
+
+@keyframes oscilar {
+	0%, 20%, 40%, 100%   { margin-bottom: 0; }
+	10%, 30% { margin-bottom: 15px; }
+}
+
+.flecha a{
+	font-size: 40px;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+.about{	padding-bottom: 180px; }
+
+.about .app-menu li>a{
+	color: #666;
+	text-transform: uppercase;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.icon-bar{ background-color: #666; }
+
+.about .app-menu li > a:hover{
+	background-color: transparent;
+	border-bottom: 1px solid #666;
+}
+
+.about h2{ margin-top: 150px; }
+
+.textAbout{
+	margin: 50px auto;
+	width: 70%;
+}
+
+.whatWe{ margin-top: 50px; }
+
+/* ==========================================================================
+   Services
+   ========================================================================== */
+.services{
+	background: url('../img/bg2.png') no-repeat top left fixed;
+	background-size: cover;
+	padding: 180px 0;
+}
+
+.appIcon{
+	padding: 10px;
+	background-color: #00ccff;
+	text-align: center;
+	font-size: 100px;
+	line-height: 160px;
+	color: #fff;
+	width: 180px;
+	height: 180px;
+	margin: 80px auto 30px;
+	border-radius: 50%;
+}
+
+/* ==========================================================================
+   Conatact
+   ========================================================================== */
+.contact{
+	padding: 80px 0;
+	background-color: #000;
+	color: #fff;
+}
+
+.appIconContact{
+	color: #00ccff;
+	text-align: center;
+	font-size: 40px;
+	margin: 60px 0 8px;
+}
+
+.formulario{ margin-top: 60px; }
+
+.form-control{
+	border-radius: 0;
+	background-color: transparent;
+	height: 45px;
+	color: #fff;
+}
+
+.form-control::-moz-placeholder{ color: #fff; }
+
+textarea.form-control{
+	resize: none;
+	height: 200px;	
+}
+
+form .boton{
+	border-radius: 0;
+	background-color: #00ccff;
+	padding: 10px 15px;
+	border-width: 0;
+	font-weight: bold;
+}
+
+form .boton > i{ font-size: 20px; }
+
+/* *** Media Query *** */
+@media (max-width: 768px){
+	.mensaje{
+		width: 80%;
+		border: 3px solid #fff;
+	}
+	.textAbout{
+		width: 90%;
+	}
+}
