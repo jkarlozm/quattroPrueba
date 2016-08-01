@@ -129,7 +129,7 @@ $(document).ready(function(){
 					switch(response){
 						case "1":
 							$("#mensajeAlerta").append('<div class="alert alert-success alert-dismissible" role="alert"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><i class="glyphicon glyphicon-ok-circle"></i> Mensaje Enviado</div>');
-							$("#formContacto")[0].reset();
+							$("#formContact")[0].reset();
 							$("#iconInput, #iconInput1, #iconInput2, #iconInput3").remove();
 							$("#name, #email, #message").parent().removeClass("has-success");
 							break;

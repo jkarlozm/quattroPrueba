@@ -19,7 +19,7 @@
 			<body style="background-color: rgba(35,67,14,0.8); margin: 0px; padding: 0px; width: 100%; height: 100%; position: relative;">
 				<div style="width: 90%; height: 100%; min-height: 100%; background-color: #fff; padding: 10px 0; position: absolute; left: 5%; top: 0; bottom: 0;">
 					<header>
-						<h1 style="text-align: center; text-transform: uppercase;">karlozweb</h1>
+						<h1 style="text-align: center; text-transform: uppercase;">Quattro</h1>
 					</header>
 					<fieldset style="width: 80%; margin:auto; margin-bottom: 15px;">
 						<legend><h4 style="text-transform: capitalize;">Datos del contacto</h4></legend>
